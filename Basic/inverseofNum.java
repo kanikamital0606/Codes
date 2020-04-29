@@ -18,4 +18,7 @@ public class inverseofNum{
 		}
 		System.out.println(i);
 	}
+
+	//426135 Input
+	//416253 Output
 }

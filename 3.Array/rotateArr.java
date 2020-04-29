@@ -2,8 +2,6 @@
 import java.io.*;
 import java.util.*;
 
-
-
 public class rotateArr{
 
 	public static void reverse(int[] a, int i, int j){

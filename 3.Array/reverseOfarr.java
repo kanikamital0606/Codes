@@ -1,33 +1,12 @@
-/*
-import java.io.*
-import java.util.*
-
-public class reverseOfarr.java{
-	public static void main(String[] args){
-
-		Scanner scn = new Scanner(System.in);
-
-		int s1 = scn.nextInt();
-
-		int[] a = new int[s1]; 
-
-		for (int i=0; i< s1; i++) {
-		
-			a[i] = scn.nextInt();
-		}
-
-		System.out.println(a[i]);
-	}
-}*/
-
 import java.io.*;
 import java.util.*;
 
 public class reverseOfarr{
 	public static void display(int[] a){
+
 		StringBuilder sb = new StringBuilder();
 
-    	for(int val: a){
+		for(int val: a){
     		sb.append(val + " ");
     	}
     	System.out.println(sb);
