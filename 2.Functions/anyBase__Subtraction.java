@@ -30,7 +30,24 @@ public class anyBase__Subtraction{
 	}
 
 	public static int getDifference(int b, int n1, int n2){
+		int ans=0; 
+		int pow = 1;
+		int borrow =0;
 
-		
-	}
+		while(n2>0){
+			int d1 = n1%10; n1=n1/10;
+      		int d2 = n2%10; n2=n2/10;
+
+      		d2= d2-borrow;
+      		borrow=0;
+
+      		if(d2<d1){
+      			d2=d2+b;
+      			borrow=1;
+      		}
+      		ans = ans+(d2-d1)*pow; //update ans;
+      		pow = pow*10; //update ans;
+      	}
+      	return ans; 
+    }
 }
