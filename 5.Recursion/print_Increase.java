@@ -16,8 +16,14 @@ public class print_Increase{
     		return; 
     	}
     	
-    	printIncreasing(n-1);
+    	printIncreasing(n-1); //4
     	System.out.println(n);
+
+        // 1
+        // 2
+        // 3
+        // 4
+        // 5
         
     }
 

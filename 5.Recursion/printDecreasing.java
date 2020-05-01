@@ -15,7 +15,14 @@ public class printDecreasing{
     	if(n==0){
     		return;
     	}
-    	System.out.println(n);
+    	System.out.println(n); //5
     	printDecreasing(n-1);
+        
+        //5-1 =4;
+        //4-1= 3; 
+        //3-1=2;
+        // 2-1=1
+
+        // output = 54321
     }
 }

@@ -14,12 +14,14 @@ public class factorial{
 
 	public static int fact(int n){
 
+		//Base Case
 		if(n==1){
 			return 1;
 		}
 
-		int num1 = fact(n-1);
-		int nfact = num1*n;
+		int num1 = fact(n-1); //factorial till n-1 means n-1= 4-1 = 3 
+		int nfact = num1*n;   //3 *4! = 24;
 		return nfact;
 	}
 }
+//Example take N=4
