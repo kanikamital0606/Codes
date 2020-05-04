@@ -2,6 +2,16 @@ import java.io.*;
 import java.util.*;
 
 public class a_2DarrayDemo{
+
+    public static void display(int[][] arr){
+
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr[0].length; j++){
+                System.out.print(arr[i][j]+ " ");
+            }
+            System.out.println();
+        }
+    }
 	public static void main(String[] args) throws Exception {
     // write your code here
 		Scanner scn = new Scanner(System.in);
@@ -17,12 +27,8 @@ public class a_2DarrayDemo{
     		}
     	}
 
-    	for(int i=0; i<arr.length; i++){
-    		for(int j=0; j<arr[0].length; j++){
+        //make a function display to print arr;
+        display(arr);
 
-    			System.out.print(arr[i][j]+ " ");
-    		}
-    		System.out.println();
-    	}
 	}
 }
