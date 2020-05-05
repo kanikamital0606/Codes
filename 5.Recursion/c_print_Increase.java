@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class print_Increase{
+public class c_print_Increase{
 
     public static void main(String[] args) throws Exception {
         // write your code here

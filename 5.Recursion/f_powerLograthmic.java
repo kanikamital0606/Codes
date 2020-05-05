@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class powerLograthmic{
+public class f_powerLograthmic{
 
 	public static void main(String[] args) throws Exception{
 		

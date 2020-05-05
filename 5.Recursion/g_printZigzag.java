@@ -2,12 +2,9 @@ import java.io.*;
 import java.util.*;
 
 public class h_printZigzag{
-
-	public static void main(String[] args) throws Exception {
-        // write your code heress
+    public static void main(String[] args) throws Exception{
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
-
         pzz(n);
     }
 
@@ -23,5 +20,4 @@ public class h_printZigzag{
         System.out.print(n+" ");
         pzz(n-1);
     }
-
 }
