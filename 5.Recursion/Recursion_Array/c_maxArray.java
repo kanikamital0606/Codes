@@ -25,6 +25,8 @@ public class c_maxArray{
 
 		//int max =0;
 		int max = maxOfArray(arr, idx+1);
+
+		//max=Math.max(max,arr[idx])
 		if(max >arr[idx]){
 			return max;
 		}
