@@ -1,3 +1,23 @@
+//////////////////////////////////////////////Target Sum Subsets - Dp
+/*
+Question
+1. You are given a number n, representing the count of elements.
+2. You are given n numbers.
+3. You are given a number "tar".
+4. You are required to calculate and print true or false, if there is a subset the elements of which add upto "tar" or not.
+
+Input Format : A number n: n1; n2 .. n number of elements; A number tar
+Output Format true or false as required
+Sample Input
+5
+4
+2
+7
+1
+3
+10
+Sample Output true
+*/
 import java.io.*;
 import java.util.*;
 
@@ -13,8 +33,29 @@ public class g_TargetSumSubset{
 		}
 
 		int tar = scn.nextInt();
-		System.out.println(func(arr, tar));
+		System.out.println(targetSumSubset(arr, tar));
 	}
+
+	public static boolean targetSumSubset(int[] arr, int tar){
+	    boolean[][] dp = new boolean[arr.length + 1][tar + 1];
+	    dp[0][0] =true;
+	    
+	    for (int i = 1; i <dp.length; i++){
+	        for (int j = 0; j <dp[0].length; j++){
+	            //element say no
+	            dp[i][j] = dp[i-1][j];
+	            
+	            //element say yes
+	            if(j-arr[i-1]>=0 && dp[i-1][j-arr[i-1]] == true){
+	                dp[i][j]=true;
+	            }
+	        }
+	    }
+	    return dp[dp.length-1][tar];
+	}
+}
+
+	/*
 	public static boolean func(int[] arr, int sum) {
 		int n = arr.length;
 
@@ -52,4 +93,4 @@ public class g_TargetSumSubset{
 				dp[i] += dp[i - n];
 		return dp[s];
 	}
-}
+}*/
