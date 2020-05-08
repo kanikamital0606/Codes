@@ -11,10 +11,13 @@ Sample Input										Sample Output
 3 2 9
 1 2 4												8
 */
-
+import java.io.*;
+import java.util.*;
 public class q_PaintHouseManyColours{
 	public static void main(String[] args) throws Exception{
 		
-		Scanner scn = new Scanner(System.in);
-	}
+		Scanner scn = new Scanner(System.in)
+
+		int n = scn.nextInt();
+		
 }
