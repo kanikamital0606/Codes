@@ -16,12 +16,37 @@ Sample Input: 	12
 				3
 Sample Output:	13
 */
-
+import java.io.*;
+import java.util.*;
 public class v_BuynSellStocksTransactionFEE{
 	public static void main(String[] args) throws Exception{
 		
-		scanner scn = new scanner(System.in);
+		Scanner scn = new Scanner(System.in);
 
 		int n = scn.nextInt();
+
+		//create array
+		int[] price = new int[n];
+		for(int i=0; i<n; i++){
+			price[i] = scn.nextInt();
+		}
+
+		//take transaction fee 
+		int tfee = scn.nextInt();
+
+		//base Case buyProfit && SELL profit
+		int buyP  = 0 - price[0];
+		int sellP = 0;
+
+		for(int i=1; i<n;i++){
+			int newBuy = Math.max(sellP -price[i], buyP); //find maximum between 
+			int newSell = Math.max(price[i]+ buyP - tfee, sellP);
+
+
+			buyP = newBuy;
+			sellP = newSell;
+		}
+
+		System.out.println(sellP);
 	}
 }
