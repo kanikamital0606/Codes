@@ -1,7 +1,8 @@
+import java.io.*;
 import java.util.*;
 public class s2duplicatesBrackets{
-
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception{
+        
         Scanner scn = new Scanner(System.in); //Input
 
         String str = scn.nextLine(); //Input String str
@@ -29,4 +30,4 @@ public class s2duplicatesBrackets{
         }
         System.out.println(false);
     }
-}
+} 
